@@ -1,3 +1,16 @@
 .title {
   color: aqua;
 }
+
+.red {
+  color: red;
+}
+
+.green {
+  color: green;
+}
+
+.alert {
+  font-weight: bold;
+  color: blue;
+}

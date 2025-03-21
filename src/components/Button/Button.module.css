@@ -1,0 +1,20 @@
+/* .icon {
+  color: blueviolet;
+}
+
+.icon:hover {
+  color: yellow;
+  cursor: pointer;
+  transform: scale(2.1);
+} */
+
+/* або */
+
+.icon {
+  color: blueviolet;
+  &:hover {
+    color: yellow;
+    cursor: pointer;
+    transform: scale(2.1);
+  }
+}
