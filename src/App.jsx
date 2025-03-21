@@ -7,6 +7,8 @@ import cats from "./assets/cats.json";
 import Item from "./components/Item/Item";
 import Modal from "./components/Modal/Modal";
 import Button from "./components/Button/Button";
+import castle from "./assets/castle.jpg";
+import s from "./App.module.css";
 
 const App = () => {
   const age = 18;
@@ -57,6 +59,13 @@ const App = () => {
           <Item key={item.name} item={item} />
         ))}
       </ul>
+      <img src={castle} />
+
+      <di className={s.flex}>
+        <div className={s.box}></div>
+        <div className={s.box}></div>
+        <div className={s.boxRed}></div>
+      </di>
     </>
   );
 };
