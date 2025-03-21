@@ -1,7 +1,9 @@
+import s from "./Message.module.css";
+
 const Message = ({ author = "Incognito", text, isOnline = false }) => {
   return (
     <div>
-      <h3>{author}</h3>
+      <h3 className={s.title}>{author}</h3>
       {isOnline ? <h6>Online</h6> : <h6>Offline</h6>}
       {isOnline && <h4>Написати</h4>}
 

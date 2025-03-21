@@ -15,12 +15,13 @@ const App = () => {
     <>
       <Header />
 
-      <h2>Style for React</h2>
+      <h2 className="title">Style for React</h2>
 
       <Button variant="outline">Click</Button>
       <Button variant="XL">Submit</Button>
 
       <Modal>
+        <h2 className="title">Text-fish</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum
           minima alias obcaecati perspiciatis deleniti totam quas voluptate et

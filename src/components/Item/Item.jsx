@@ -1,8 +1,12 @@
+import s from "./Item.module.css";
+
 const Item = ({ item }) => {
   return (
     <li>
       <img src={item.image} width={500} />
-      <p>{item.name}</p>
+      <h2 className={s.title}>{item.name}</h2>
+      <p className={s.phone}>{item.phone}</p>
+      <p>{item.email}</p>
     </li>
   );
 };
