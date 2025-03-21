@@ -6,6 +6,7 @@ import Message from "./components/Message/Message";
 import cats from "./assets/cats.json";
 import Item from "./components/Item/Item";
 import Modal from "./components/Modal/Modal";
+import Button from "./components/Button/Button";
 
 const App = () => {
   const age = 18;
@@ -13,7 +14,12 @@ const App = () => {
   return (
     <>
       <Header />
+
       <h2>Style for React</h2>
+
+      <Button variant="outline">Click</Button>
+      <Button variant="XL">Submit</Button>
+
       <Modal>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum
