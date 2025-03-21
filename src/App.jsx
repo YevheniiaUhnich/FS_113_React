@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Message from "./components/Message/Message";
 import cats from "./assets/cats.json";
 import Item from "./components/Item/Item";
+import Modal from "./components/Modal/Modal";
 
 const App = () => {
   const age = 18;
@@ -12,6 +13,27 @@ const App = () => {
   return (
     <>
       <Header />
+      <h2>Style for React</h2>
+      <Modal>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum
+          minima alias obcaecati perspiciatis deleniti totam quas voluptate et
+          nemo, nobis nisi voluptas repellat, vitae sint eos ex quibusdam
+          possimus.
+        </p>
+        <button>Click</button>
+      </Modal>
+
+      <Modal>
+        <p>Number</p>
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+        </ul>
+        <button>Submit</button>
+      </Modal>
+
       {isAdult}
 
       {null && <h2>Hello</h2>}
@@ -25,15 +47,7 @@ const App = () => {
 
       <ul>
         {cats.map((item) => (
-          <li>
-            <img width={500} src={item.image} />
-            <p>{item.name}</p>
-          </li>
-        ))}
-      </ul>
-      <ul>
-        {cats.map((item, idx) => (
-          <Item key={idx} item={item} />
+          <Item key={item.name} item={item} />
         ))}
       </ul>
     </>

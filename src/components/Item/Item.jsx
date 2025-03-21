@@ -1,7 +1,7 @@
 const Item = ({ item }) => {
   return (
     <li>
-      <img src={item.image} width={200} />
+      <img src={item.image} width={500} />
       <p>{item.name}</p>
     </li>
   );
