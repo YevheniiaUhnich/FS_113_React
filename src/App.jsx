@@ -12,6 +12,8 @@ import Counter from "./components/Counter/Counter";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 import s from "./App.module.css";
 import Voting from "./components/Voting/Voting";
+import TodoList from "./components/TodoList/TodoList";
+import { TodoItem } from "./components/TodoList/TodoItem";
 
 const App = () => {
   const age = 18;
@@ -23,6 +25,8 @@ const App = () => {
       {/* <h2 className="title">Style for React</h2> */}
       <ColorPicker />
       <Voting />
+      <TodoList />
+      <TodoItem />
       {/* <Button variant="outline">Click</Button>
       <Button variant="XL">Submit</Button> */}
 
@@ -66,11 +70,11 @@ const App = () => {
       </ul>
       <img src={castle} />
 
-      <di className={s.flex}>
+      <div className={s.flex}>
         <div className={s.box}></div>
         <div className={s.box}></div>
         <div className={s.boxRed}></div>
-      </di>
+      </div>
     </>
   );
 };
