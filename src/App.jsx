@@ -8,6 +8,7 @@ import Item from "./components/Item/Item";
 import Modal from "./components/Modal/Modal";
 import Button from "./components/Button/Button";
 import castle from "./assets/castle.jpg";
+import Counter from "./components/Counter/Counter";
 import s from "./App.module.css";
 
 const App = () => {
@@ -48,7 +49,7 @@ const App = () => {
       {null && <h2>Hello</h2>}
       {false}
       {undefined}
-
+      <Counter counter={Counter} />
       <Message author="Alex" text="Продам праску!" isOnline={true} />
       <Message author="Olena" text="Куплю хотдог!" isOnline={false} />
       <Message author="Ihor" text="Привіт!" isOnline />
