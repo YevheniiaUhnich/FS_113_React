@@ -19,12 +19,12 @@ const App = () => {
     <>
       <Header />
 
-      <h2 className="title">Style for React</h2>
+      {/* <h2 className="title">Style for React</h2> */}
+      <ColorPicker />
+      {/* <Button variant="outline">Click</Button>
+      <Button variant="XL">Submit</Button> */}
 
-      <Button variant="outline">Click</Button>
-      <Button variant="XL">Submit</Button>
-
-      <Modal>
+      {/* <Modal>
         <h2 className="title">Text-fish</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eum
@@ -33,9 +33,9 @@ const App = () => {
           possimus.
         </p>
         <button>Click</button>
-      </Modal>
+      </Modal> */}
 
-      <Modal>
+      {/* <Modal>
         <p>Number</p>
         <ul>
           <li>One</li>
@@ -43,19 +43,19 @@ const App = () => {
           <li>Three</li>
         </ul>
         <button>Submit</button>
-      </Modal>
+      </Modal> */}
 
       {isAdult}
 
-      {null && <h2>Hello</h2>}
+      {/* {null && <h2>Hello</h2>}
       {false}
-      {undefined}
+      {undefined} */}
       <Counter counter={Counter} />
-      <ColorPicker />
-      <Message author="Alex" text="Продам праску!" isOnline={true} />
+
+      {/* <Message author="Alex" text="Продам праску!" isOnline={true} />
       <Message author="Olena" text="Куплю хотдог!" isOnline={false} />
       <Message author="Ihor" text="Привіт!" isOnline />
-      <Message author="Oleg" text="Hello World" isOnline={false} />
+      <Message author="Oleg" text="Hello World" isOnline={false} /> */}
 
       <ul>
         {cats.map((item) => (
