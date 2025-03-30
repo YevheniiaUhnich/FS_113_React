@@ -11,6 +11,7 @@ import castle from "./assets/castle.jpg";
 import Counter from "./components/Counter/Counter";
 import ColorPicker from "./components/ColorPicker/ColorPicker";
 import s from "./App.module.css";
+import Voting from "./components/Voting/Voting";
 
 const App = () => {
   const age = 18;
@@ -21,6 +22,7 @@ const App = () => {
 
       {/* <h2 className="title">Style for React</h2> */}
       <ColorPicker />
+      <Voting />
       {/* <Button variant="outline">Click</Button>
       <Button variant="XL">Submit</Button> */}
 
