@@ -9,6 +9,7 @@ import Modal from "./components/Modal/Modal";
 import Button from "./components/Button/Button";
 import castle from "./assets/castle.jpg";
 import Counter from "./components/Counter/Counter";
+import ColorPicker from "./components/ColorPicker/ColorPicker";
 import s from "./App.module.css";
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
       {false}
       {undefined}
       <Counter counter={Counter} />
+      <ColorPicker />
       <Message author="Alex" text="Продам праску!" isOnline={true} />
       <Message author="Olena" text="Куплю хотдог!" isOnline={false} />
       <Message author="Ihor" text="Привіт!" isOnline />
