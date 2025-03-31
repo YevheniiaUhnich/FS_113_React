@@ -1,9 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import s from "./Counter.module.css";
 
 export const Counter = () => {
   const [counter, setCounter] = useState(0);
   const [step, setStep] = useState(1);
+
+  useEffect(() => {
+    console.log(`лічильник запущено`);
+  }, []);
+
+  useEffect(() => {
+    console.log(`лічильник оновлено! Нове значення: ${counter}`);
+  }, [counter]);
 
   const handlePlusClick = () => {
     setCounter(counter + step);
