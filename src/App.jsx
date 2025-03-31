@@ -14,13 +14,28 @@ import s from "./App.module.css";
 import Voting from "./components/Voting/Voting";
 import TodoList from "./components/TodoList/TodoList";
 import { TodoItem } from "./components/TodoList/TodoItem";
+import { useState } from "react";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleClose = () => setIsOpen(false);
+
   const age = 18;
   const isAdult = age > 18 ? <h2>Hello</h2> : <h2>Bye</h2>;
   return (
     <>
       <Header />
+      <button onClick={() => setIsOpen(!isOpen)}>Open Modal</button>
+      {isOpen && (
+        <Modal onClose={handleClose}>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil
+            tempora sapiente ut et, laborum, eveniet suscipit iusto blanditiis
+            quaerat nam, totam repudiandae natus nostrum architecto ea earum
+            provident eligendi?
+          </p>
+        </Modal>
+      )}
 
       {/* <h2 className="title">Style for React</h2> */}
       <ColorPicker />
